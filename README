@@ -1,0 +1,20 @@
+### This is a tool for check performance raiting of the sites
+
+#### Install:
+* First af all vhoose the folder where you will be work and go there with terminal/command line
+* Clone the repository to your local PC (for this action you need GitHub Cli https://cli.github.com/)
+``` 
+gh repo clone Metatronishe/pagespeed
+```
+* Install program for successful work (for this action you need NodeJS https://nodejs.org/en/)
+```
+npm ci
+```
+
+#### Run the tool:
+* You need to put urls for check to the file "urls.txt", each url on the new line
+* start the tool by command in terminal/command line
+```
+node index.js
+```
+* The result will be stored in the file "result.csv"
