@@ -28,7 +28,7 @@ const converter = require('convert-array-to-csv');
         let url = urls[i];
         let resultDesktop = await lighthouse(url, optionsDesktop);
         let resultMobile = await lighthouse(url, optionsMobile);
-        csvResult.push([url, resultDesktop.lhr.categories.performance.score * 100, resultMobile.lhr.categories.performance.score * 100]);
+        csvResult.push([url, Math.round(resultDesktop.lhr.categories.performance.score * 100), Math.round(resultMobile.lhr.categories.performance.score * 100)]);
         bar.increment();
     };
 
